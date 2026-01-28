@@ -27,6 +27,12 @@ const Agency = () => {
         start: "top 30%",
         end: "top -70%",
         pin: true,
+        scrub: 1,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: "transform",
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
         onUpdate: (elem) => {
           let imgIndex;
 
@@ -44,10 +50,10 @@ const Agency = () => {
 
   return (
     <div>
-      <div className="section1">
+      <div className="section1 relative py-1">
         <div
           ref={imgDivRef}
-          className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-3xl top-96 left-[30vw]"
+          className="absolute overflow-hidden h-[20vw] w-[15vw] rounded-3xl top-0 left-[30vw]"
         >
           <img
             ref={imgRef}

@@ -5,14 +5,8 @@ import Agency from "./pages/Agency";
 import Projects from "./pages/Projects";
 
 const App = () => {
-
-
-  
-
   return (
     <div className="text-white">
-      
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/agency" element={<Agency />} />
